@@ -1,0 +1,184 @@
+Absract:
+    Tourism Management System is a complete tourist integrated tourist website . 
+It describes the development of a Travel and Tourism Management System. 
+The objectives of the project are to develop a web-based application that provides 
+travel services to customers and agents, allows tourists to search for places 
+based on their preferences, and promotes responsible tourism.
+
+    The platform provides the customer to register in the system to get an account. 
+Thruoght that customers can view tour packages and Holidays They can select 
+required packages thus book the package with their own conviniences . they can book
+tickets or can cancel the booked one . They can also add their reviews in the site .
+
+    On the travel agencies side they can view the registerd customers and their 
+bookings .they can add the multiple packages for the customers. The bookings can 
+accept by the agencies & can send e-mail to confirm the bookings .
+
+    The admin related functionalities manages all informations and has access right 
+to dd ,delete ,adit and view data related to agencies ,their packages ,customers and 
+their bookings .Admin can decide whether the travel agencies get accept or not .
+
+
+Table Modules:
+
+* USER MODULE *
+    user_id    primary key
+    name
+    address
+    email
+    dob
+    phone
+    user_type
+    username 
+    password
+
+* TRAVEL AGENCIES *
+    agency_id    primary key
+    name
+    address
+    email
+    phone
+    user_type
+    username
+    password
+
+* PACKAGE *
+    package_id   primary key
+    agency_id    foreign key
+    user_id      foreign key
+    start place
+    end place
+    image_1
+    image_2
+    image_3
+
+* BOOKING *
+    booking_id   primary key
+    package_id   foreign key
+    user_id      foreign key
+    booking_day
+    
+
+* REVIEWS *
+    review_id    primary key
+    user_id      foreign key
+    rating
+    descriptions
+* ADMIN *
+
+
+
+Certainly! Based on the abstract provided, I can suggest a structure for a website that would implement the Tourism Management System. Here's an outline of the key pages and features the website could include:
+
+1. Home Page
+   - Welcome message
+   - Featured tour packages
+   - Search bar for destinations
+   - Quick links to popular categories (e.g., Beach, Mountain, City tours)
+
+2. User Registration/Login Page
+   - Sign up form for new users
+   - Login form for existing users
+   - Option to reset password
+
+3. Tour Package Listing Page
+   - List of available packages
+   - Filters (by destination, price range, duration, etc.)
+   - Sorting options (price, popularity, etc.)
+
+4. Package Details Page
+   - Detailed information about each package
+   - Photos/gallery
+   - Itinerary
+   - Pricing
+   - Booking button
+   - Reviews section
+
+5. User Dashboard
+   - Overview of booked trips
+   - Option to view/cancel bookings
+   - Personal information management
+   - Review submission form for past trips
+
+6. Booking Page
+   - Package summary
+   - Date selection
+   - Number of travelers
+   - Additional options/add-ons
+   - Payment processing
+
+7. Agency Portal
+   - Dashboard with bookings overview
+   - Package management (add, edit, remove packages)
+   - Customer list
+   - Booking confirmation system
+
+8. Admin Panel
+   - User management
+   - Agency management
+   - Package approval system
+   - Site statistics and reports
+
+9. About Us Page
+   - Information about the company
+   - Mission statement
+   - Contact information
+
+10. FAQ Page
+    - Common questions and answers
+
+11. Blog/Travel Tips Section
+    - Articles on destinations
+    - Travel advice
+    - User-generated content
+
+12. Responsible Tourism Page
+    - Information on sustainable travel practices
+    - Eco-friendly tour options
+
+13. Customer Support Page
+    - Contact form
+    - Live chat option
+    - FAQ section
+
+Key Features to Implement:
+- Responsive design for mobile and desktop
+- Secure user authentication system
+- Integration with payment gateways
+- Email notification system for bookings and updates
+- Review and rating system
+- Search functionality with autocomplete
+- Interactive maps for destinations
+- Multi-language support (if targeting international audience)
+- Integration with social media for sharing and login
+
+Remember to focus on creating an intuitive user interface, ensuring fast load times, and implementing robust security measures, especially for handling user data and payments.
+
+Would you like me to elaborate on any specific aspect of this website structure?
+
+
+
+
+A city offering a discovery of the beautiful era.
+
+Day 1 Settle in and explore New Delhi's attractions
+Day 2 Discover the wonders of Old Delhi
+Day 3 Explore more of New Delhi's highlights
+Where to stay in Delhi
+Travel tips for visiting Delhi
+Packing essentials for Delhi
+
+<!-- <p><button><a href="{% url 'delete_review' %}">Delete</a></button></p> -->
+
+
+*Cancellation more than 30 days before departure: Full refund minus booking charge .
+*Cancellation within 14 to 30 days: 75% of payment will get refund.
+*Cancellation within 3 to 14: 50% of payment will get refund.
+*Cancellation within 48 hours: No refund.
+
+Name : Arun Sam
+Address : Pilakkal (H)
+          Omanoor po, Kochi
+Email : arunsam@gmail.com
+Phone No : 56384637
+DOB : 06/24/2001          
